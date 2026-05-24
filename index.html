@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="mystyle.css" />
+        <script src="https://kit.fontawesome.com/c2d21beb0e.js" crossorigin="anonymous"></script>
+        <title>Welcome page - Sallal Travels</title>
+    </head>
+
+    <body>
+        <!-- Criteria B -->
+        <nav class="navbarbox">
+            <div class="brand-logo">
+                <img src="images/logo image.jpg" alt="Logo" />
+                <span>Sallal Travels</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Book</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Packages</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">United State</a></li>
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">France</a></li>
+                        <li><a href="#">Germany</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Services</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+
+            <div class="btn">
+                <button><a href="login.html">Login</a></button>
+                <button><a href="register.html">Register</a></button>
+            </div>
+        </nav>
+
+        <!-- Criteria C & D -->
+        <section class="criteria-c-d">
+            <h3>Welcome to Sallal Travels</h3>
+
+            <h1>Visit <span id="place"></span></h1>
+
+            <button class="book-btn">Book Now</button>
+        </section>
+
+        <!-- MAIN CONTAINER TO DIVIDE 2 SECTION Criteria A -->
+        <section class="booking-section">
+            <!-- LEFT SIDE IMAGE -->
+            <!--
+      <div class="left-side">
+        <img src="images/logo image.jpg" alt="company based Image">
+      </div>
+      -->
+
+            <div class="left-side">
+                <img src="images/sallal travel pic.jpg" alt="Sallal Travels Company" />
+            </div>
+
+            <!-- RIGHT SIDE FORM -->
+            <div class="right-side">
+                <h2>Book Your Trip</h2>
+
+                <form id="bookingForm">
+                    <label>Where To</label>
+
+                    <select id="place" required>
+                        <option value="">Select Place</option>
+                        <option value="India">India</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="United States">United States</option>
+                        <option value="Japan">Japan</option>
+                    </select>
+
+                    <label>How Many Persons</label>
+                    <input type="number" id="persons" min="1" required />
+
+                    <label>Start Date</label>
+                    <input type="date" id="startDate" required />
+
+                    <label>End Date</label>
+                    <input type="date" id="endDate" required />
+
+                    <label>Description</label>
+
+                    <textarea id="description" minlength="50" maxlength="500" required></textarea>
+
+                    <button type="submit">Book Now</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- PACKAGE GALLERY SECTION -->
+        <section class="package-gallery">
+            <h2>Popular Packages</h2>
+
+            <div class="package-container">
+                <!-- Package 1 -->
+                <div class="package-card">
+                    <img src="images/Maldives.jpg" alt="Maldives" />
+
+                    <div class="package-content">
+                        <h3>Maldives</h3>
+
+                        <p>Beautiful beaches, luxury resorts and water sports adventures.</p>
+
+                        <div class="package-info">
+                            <span class="price">$799</span>
+                            <span class="rating">⭐ 4.8</span>
+                        </div>
+
+                        <button class="package-btn">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="package-card">
+                    <img src="images/paris.jpg" alt="Paris" />
+
+                    <div class="package-content">
+                        <h3>Paris</h3>
+
+                        <p>Explore Eiffel Tower, museums and romantic streets of France.</p>
+
+                        <div class="package-info">
+                            <span class="price">$999</span>
+                            <span class="rating">⭐ 4.7</span>
+                        </div>
+
+                        <button class="package-btn">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="package-card">
+                    <img src="images/dubai.jpg" alt="Dubai" />
+
+                    <div class="package-content">
+                        <h3>Dubai</h3>
+
+                        <p>Experience Burj Khalifa, desert safari and luxury shopping.</p>
+
+                        <div class="package-info">
+                            <span class="price">$850</span>
+                            <span class="rating">⭐ 4.6</span>
+                        </div>
+
+                        <button class="package-btn">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Package 4 -->
+                <div class="package-card">
+                    <img src="images/switzerland.jpg" alt="Switzerland" />
+
+                    <div class="package-content">
+                        <h3>Switzerland</h3>
+
+                        <p>Snow mountains, lakes and scenic train journeys await you.</p>
+
+                        <div class="package-info">
+                            <span class="price">$1200</span>
+                            <span class="rating">⭐ 4.9</span>
+                        </div>
+
+                        <button class="package-btn">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Package 5 -->
+                <div class="package-card">
+                    <img src="images/singapure.jpg" alt="Singapore" />
+
+                    <div class="package-content">
+                        <h3>Singapore</h3>
+
+                        <p>Enjoy Marina Bay Sands, nightlife and delicious food.</p>
+
+                        <div class="package-info">
+                            <span class="price">$780</span>
+                            <span class="rating">⭐ 4.5</span>
+                        </div>
+
+                        <button class="package-btn">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Package 6 -->
+                <div class="package-card">
+                    <img src="images/bali.jpg" alt="Bali" />
+
+                    <div class="package-content">
+                        <h3>Bali</h3>
+
+                        <p>Relax in tropical beaches, temples and waterfalls.</p>
+
+                        <div class="package-info">
+                            <span class="price">$690</span>
+                            <span class="rating">⭐ 4.8</span>
+                        </div>
+
+                        <button class="package-btn">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Package 7 -->
+                <div class="package-card">
+                    <img src="images/newyork.jpg" alt="New York" />
+
+                    <div class="package-content">
+                        <h3>New York</h3>
+
+                        <p>Visit Times Square, Central Park and Broadway shows.</p>
+
+                        <div class="package-info">
+                            <span class="price">$1100</span>
+                            <span class="rating">⭐ 4.6</span>
+                        </div>
+
+                        <button class="package-btn">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Package 8 -->
+                <div class="package-card">
+                    <img src="images/tokyo.jpg" alt="Tokyo" />
+
+                    <div class="package-content">
+                        <h3>Tokyo</h3>
+
+                        <p>Discover anime culture, temples and Japanese cuisine.</p>
+
+                        <div class="package-info">
+                            <span class="price">$980</span>
+                            <span class="rating">⭐ 4.9</span>
+                        </div>
+
+                        <button class="package-btn">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Package 9 -->
+                <div class="package-card">
+                    <img src="images/thailand.jpg" alt="Thailand" />
+
+                    <div class="package-content">
+                        <h3>Thailand</h3>
+
+                        <p>Enjoy beaches, floating markets and island adventures.</p>
+
+                        <div class="package-info">
+                            <span class="price">$720</span>
+                            <span class="rating">⭐ 4.7</span>
+                        </div>
+
+                        <button class="package-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section class="services-section">
+            <h2>Our Services</h2>
+
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="service-icon">🏨</div>
+                    <h3>Affordable Hotel</h3>
+                    <p>Comfortable and budget-friendly hotel accommodation.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🍹</div>
+                    <h3>Food & Drinks</h3>
+                    <p>Enjoy delicious local and international cuisines.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Safety Guide</h3>
+                    <p>Professional travel safety support and guidance.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">✈️</div>
+                    <h3>Flight Booking</h3>
+                    <p>Easy and affordable flight booking services.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3>Transportation</h3>
+                    <p>Private transport and airport pickup facilities.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📸</div>
+                    <h3>Photography Tours</h3>
+                    <p>Capture your best travel memories professionally.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION -->
+        <section class="gallery-section">
+            <h2>Travel Gallery</h2>
+
+            <div class="gallery-container">
+                <div class="gallery-card">
+                    <img src="images/Gallery photo 4.jpg" alt="Travel Image gallery" />
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/Gallery photo 2.jpg" alt="Travel Image gallery" />
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/Gallery photo 3.jpg" alt="Travel Image gallery" />
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/Gallery photo1.jpg" alt="Travel Image gallery" />
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/Gallery photo 5.jpg" alt="Travel Image gallery" />
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/Gallery photo 6.jpg" alt="Travel Image gallery" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US SECTION -->
+        <section class="about-section">
+            <!-- LEFT SIDE -->
+            <div class="about-image">
+                <img src="images/company ad.jpg" alt="About Sallal Travels" />
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="about-content">
+                <h2>About Us</h2>
+
+                <p>
+                    Sallal Travels is one of the trusted travel companies providing unforgettable travel experiences across
+                    the world.
+                </p>
+
+                <p>
+                    Established in 2020, our mission is to make travel affordable, comfortable and enjoyable for everyone.
+                </p>
+
+                <p>
+                    We provide international tour packages, hotel booking, transportation, photography tours and complete
+                    travel guidance for our customers.
+                </p>
+
+                <p>Thousands of travelers trust Sallal Travels for safe, exciting and memorable vacations.</p>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-brand">
+                <h2>Sallal Travels</h2>
+                <p>Your trusted travel partner.</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i>- Twitter</a>
+            </div>
+
+            <div class="footer-copy">
+                <p>© 2026 Sallal Travels. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
